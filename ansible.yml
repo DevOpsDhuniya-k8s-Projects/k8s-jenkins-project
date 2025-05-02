@@ -7,3 +7,5 @@
          KUBECONFIG: "/home/ubuntu/.kube/config"  # Explicit path
      - name: create new service
        command: "kubectl apply -f /home/ubuntu/Service.yml"
+       environment:
+         KUBECONFIG: "/home/ubuntu/.kube/config"  # Explicit path
